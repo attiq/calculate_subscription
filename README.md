@@ -23,13 +23,6 @@ This gem provides an easy way to calculate the subscription days for given amoun
 ```ruby
 require 'calculate_subscription'
 ````
-
-```ruby
-response = CalculateSubscription.new(12.99, 'USD')
-````
-
-Default valid currencies are 'USD' and 'BTC'.
-
 Valid currencies and Subscription Rates can be configured as follow    
 
 ```ruby
@@ -38,6 +31,10 @@ CalculateSubscription.config do |c|
   c.one_week_price = 12.99
   c.three_month_price = 75.00
 end
+````
+
+```ruby
+response = CalculateSubscription.new(12.99, 'USD')
 ````
 
 ### Requirements

@@ -4,27 +4,10 @@ require 'json'
 
 module CalculateSubscription
   class << self
-    attr_accessor :amount, :currency
-    attr_writer :one_week_price, :three_month_price, :currencies, :per_day_price, :response
+    attr_accessor :amount, :currency, :one_week_price, :three_month_price, :currencies, :per_day_price, :response
 
     def config
       yield self
-    end
-
-    def one_week_price
-      @one_week_price || 12.99
-    end
-
-    def three_month_price
-      @three_month_price || 75.00
-    end
-
-    def per_day_price
-      @per_day_price || 0.00
-    end
-
-    def currencies
-      @currencies || %w[USD BTC]
     end
 
     def new(amount, currency)
