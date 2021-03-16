@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Calculating subscription days for users to buy a subscription'
   spec.description = 'This gem calculate the subscription days for given amount
                       and currency for the user to buy a subscription'
-  spec.homepage = 'https://github.com/attiq/calculate_subscription'
+  spec.homepage = 'https://github.com/attiq/calculate_subscription.git'
   spec.license = 'MIT'
   spec.platform = Gem::Platform::RUBY
   spec.required_ruby_version = '>= 2.7.1'
